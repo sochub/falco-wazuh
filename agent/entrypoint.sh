@@ -4,7 +4,7 @@ envsubst < "/agent/ossec.conf" > "/var/ossec/etc/ossec.conf"
 # cp -R /var/ossec/etc/ossec1.conf /var/ossec/etc/ossec.conf
 
 echo "### start registration process ###"
-/var/ossec/bin/agent-auth -m $wazuh_manager -G $wazuh_groups -P $wazuh_password
+/var/ossec/bin/agent-auth -m $wazuh_manager
 
 #run falco into docker image.
 falco-probe-loader

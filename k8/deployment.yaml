@@ -21,20 +21,12 @@ spec:
           privileged: true
         resources:
           limits:
-            cpu: 1
-            memory: 2Gi
+            memory: 512Mi
         env:
         - name: wazuh_manager
           value: ""
         - name: SYSDIG_SKIP_LOAD
           value: "true"
-        - name: wazuh_groups
-          value: "daemonset" 
-        - name: wazuh_password
-          valueFrom:
-            secretKeyRef:
-                name: wazuh-password
-                key: password
         volumeMounts:
         - mountPath: /var/run
           name: var-run
