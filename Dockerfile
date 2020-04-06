@@ -1,4 +1,4 @@
-FROM falcosecurity/falco:0.18.0
+FROM falcosecurity/falco:latest
 LABEL description "Wazuh Agent"
 LABEL maintainer "NoEnv"
 LABEL maintainer="friquet@gmail.com"
