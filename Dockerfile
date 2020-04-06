@@ -56,6 +56,7 @@ RUN localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
 
 
 RUN apt update && \
+    apt upgrade -y && \
     #installing pip for docker.
     pip install --upgrade pip && \
     pip install --no-cache-dir docker docker-py && \
