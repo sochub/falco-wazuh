@@ -1,0 +1,18 @@
+{
+  "summary": {
+    "title": "Testing",
+    "owner": "santi",
+    "description": "testing threat model for wazuh-falco"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "testing",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ],
+    "reviewer": "santi"
+  }
+}
